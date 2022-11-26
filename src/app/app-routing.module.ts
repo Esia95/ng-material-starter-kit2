@@ -9,13 +9,14 @@ import { EmployeeFormComponentModule } from './components/employee-form/employee
 import { EmployeeFormServiceModule } from './services/employee-form.service-module';
 import { LoginFormComponentModule } from './components/login-form/login-form.component-module';
 import { LoginFormServiceModule } from './services/login-form.service-module';
+import {CategoriesServiceModule} from "./services/categories.service-module";
 
 @NgModule({
   imports: [RouterModule.forRoot([
     { path: 'create-product', component: ProductFormComponent },
     { path: 'create-employee', component: EmployeeFormComponent },
     { path: 'login', component: LoginFormComponent }
-  ]), ProductFormComponentModule, ProductServiceModule, EmployeeFormComponentModule, EmployeeFormServiceModule, LoginFormComponentModule, LoginFormServiceModule],
+  ]), ProductFormComponentModule, ProductServiceModule, EmployeeFormComponentModule, EmployeeFormServiceModule, LoginFormComponentModule, LoginFormServiceModule, CategoriesServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
